@@ -1,7 +1,7 @@
 # Create Danta Mao-Mao
 > By: A1ex
 
-> Date: April 2025
+> April 2025
 
 This project is designed for creating **Danta Mao-Mao** to celebrate the **4th Danta TECH anniversary**. The original "daxigua" game was developed by `Shenzhen Biyi Interactive Co. Ltd Company` using `Cocos Creator v2.2.2`, and this project utilizes the `Cocos Creator v2.4.3 version`.
 
@@ -22,8 +22,10 @@ A total of 11 Mao-Mao logos were changed. The following Python scripts were used
 ```bash
 # Rename the Danta images
 python dantaImg_rename.py
+
 # Convert the Danta images to the required format
 python dantaImg_convertor.py
+
 # Copy the processed Danta images to the appropriate location
 python dantaImg_cp.py
 ```
@@ -37,6 +39,7 @@ In the `assets/Script/MainGame.ts` file, the game settings were adjusted. The fo
 ```java
 // Schedule a function to be executed once after 0.5 seconds
 this.scheduleOnce(function () {
+
     // Check the current count of created fruits and create a new fruit accordingly
     if (0 === t.createFruitCount) {
         t.createOneFruit(0);
@@ -61,20 +64,17 @@ this.scheduleOnce(function () {
         t.createOneFruit(Math.floor(Math.random() * 5));
         t.createFruitCount++;
     }
+    
 }, 0.5);
+
 ```
 ## 3. Screen Shoot
 The following are screenshots of the modified Danta Maomao project. These screenshots showcase the visual changes made, including the new Mao-Mao logos and the updated background.
-<figure class="half">
-<img src="dantaImgs_bg/screenShot1.jpg">
-<img src="dantaImgs_bg/screenShot2.jpg">
-<img src="dantaImgs_bg/screenShot3.jpg">
-</figure>
-<style>
-img{
-width: 60%;
-padding-left: 20%;
-}
-</style>
+<div style="display: flex; justify-content: space-between;">
+    <img src="dantaImgs_bg/screenShot1.jpg" style="width: 30%;">
+    <img src="dantaImgs_bg/screenShot2.jpg" style="width: 30%;">
+    <img src="dantaImgs_bg/screenShot3.jpg" style="width: 30%;">
+</div>
+
 
 ---
